@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Learn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Learn</h1>
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#about">من نحن</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <img
+            src="images/home.png"
+            alt=""
+            onerror="this.onerror=null;this.src='https://img.freepik.com/free-photo/books-library_1150-5920.jpg'">
+        <div class="hero-text">
+            <h2>ابدأ رحلة تعلم اللغات مع <br><strong>Smart Learn</strong></h2>
+        </div>
+    </section>
+
+    <section class="courses" id="courses">
+        <div class="course-card">
+            <img
+                src="images/english.jpg"
+                alt=""
+                onerror="this.src='https://cdn.britannica.com/25/4825-050-977D8C5E/Flag-United-Kingdom.jpg'">
+            <h3>تعلم اللغة الإنجليزية</h3>
+            <button type="button" onclick="window.location.href='english.html'">ابدأ الكورس</button>
+        </div>
+
+        <div class="course-card">
+            <img
+                src="images/french.jpg"
+                alt=""
+                onerror="this.src='https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png'">
+            <h3>تعلم اللغة الفرنسية</h3>
+            <button type="button" onclick="window.location.href='french.html'">ابدأ الكورس</button>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>من نحن</h2>
+        <p>
+            تقدم منصة Smart Learn كورسات تعليمية مبسطة لتعلم اللغات بطريقة ممتعة وعالمية. يمكنك متابعة المستويات المختلفة مباشرة من المتصفح.
+        </p>
+    </section>
+
+    <!-- <section class="contact" id="contact">
+        <h2>ادخال البيانات</h2>
+        <form name="contactForm" onsubmit="return validateForm()" method="post" action="connectionES.php">
+            <input type="text" name="name" placeholder="الاسم" required>
+            <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+            <button type="submit">إرسال</button>
+        </form>
+    </section> -->
+    <section class="contact" id="contact">
+    <h2>ادخال البيانات</h2>
+    <form name="contactForm" method="post" action="connectionES.php">
+        
+        <input type="text" name="username" placeholder="الاسم" required>
+        
+        <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        
+        <button type="submit">إرسال</button>
+    </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Smart Learn. جميع الحقوق محفوظة</p>
+    </footer>
+
+    <button type="button" id="scroll-to-top" title="العودة للأعلى">↑</button>
+    <button type="button" id="background-btn" onclick="changeBackgroundColor()">تغيير الخلفية</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
